@@ -2,7 +2,7 @@
 FROM nginx
 
 # Copy custom static website to Nginx server
-COPY index.html /usr/share/nginx/html
+COPY /var/jenkins_home/workspace/nginx/index.html /usr/share/nginx/html
 
 # Expose ports
 EXPOSE 80
